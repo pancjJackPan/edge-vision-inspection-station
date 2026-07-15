@@ -1,0 +1,8 @@
+services:
+  edge-vision-inspection-station:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      VISION_SITE_NAME: "Line A Inspection Station"
+      VISION_CAMERA_SOURCE: "rtsp://camera.local/line-a"
